@@ -29,3 +29,20 @@ navLink.forEach((link) =>
 })
 );
 
+// Ajustar el desplazamiento al hacer clic en los enlaces del menú
+navLink.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevenir el comportamiento predeterminado
+    const targetId = link.getAttribute("href").substring(1); // Obtener el ID del destino
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = targetElement.offsetTop - 50; // Ajustar el desplazamiento (50px como ejemplo)
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+    }
+  });
+});
+

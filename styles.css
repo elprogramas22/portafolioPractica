@@ -329,7 +329,7 @@ footer {
     
     .burger-menu {
         display: block;
-      }
+    }
     
     nav ul.show {
         transform: translateX(0);
@@ -342,12 +342,12 @@ footer {
     }
     
     .hero img {
-        height: 37.5rem;
+        height: 28rem;
         width: 30rem;
     }
     
     .bio {
-        margin-top: -7rem;
+        margin-top: 1rem;
         width: 20.5rem;
     }
     
@@ -383,20 +383,20 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-.hero img {
-    height: 37.5rem;
-    width: 23rem;
-}
-  
-.bio {
-    width: 18.3rem;
-}
-  
-.project-container {
-    width: 17.875rem;
-}
-  
-.contact-form-container {
-    max-width: 17.75rem;
-}
+    .hero img {
+        height: 37.5rem;
+        width: 23rem;
+    }
+    
+    .bio {
+        width: 18.3rem;
+    }
+    
+    .project-container {
+        width: 17.875rem;
+    }
+    
+    .contact-form-container {
+        max-width: 17.75rem;
+    }
 }
